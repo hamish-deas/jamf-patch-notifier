@@ -9,14 +9,11 @@ Add JAMF_PATCH_USER and JAMF_PATCH_PASS to your .env, using a read-only Jamf acc
 
 You will also need a Slack App added to your workspace, with the following user token scopes:
 * chat:write
-* im:write
 * users:read
 * users:read.email
+* identity.email
 
 Once set up, add SLACK_MAILER_TOKEN into your .env and assign your user OAuth token.
 
 # Testing
 You can find a laptop’s ID in Jamf by navigating to it, and under the ‘General’ tab you should see Jamf Pro Computer ID: <device_id> . You can also see the ID in the URL, as an ‘id’ query.
-
-# Contributing
-Pull requests welcomed!
